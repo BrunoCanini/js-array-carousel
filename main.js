@@ -41,10 +41,10 @@ btnAvanti.addEventListener("click" , function(){
 
     arrayElementiImg[indiceIniziale].classList.remove("visible")
 
-    indiceIniziale++;
-
-    if(indiceIniziale == arrayElementiImg.length){
+    if(indiceIniziale == arrayElementiImg.length-1){
         indiceIniziale = 0;
+    }else{
+        indiceIniziale++;
     }
 
     arrayElementiImg[indiceIniziale].classList.add("visible")
@@ -59,11 +59,11 @@ btnIndietro.addEventListener("click" , function(){
 
     arrayElementiImg[indiceIniziale].classList.remove("visible")
 
-    indiceIniziale--;
-
-    // if(indiceIniziale == 0){
-    //     indiceIniziale = ;
-    // }
+    if(indiceIniziale == 0){
+        indiceIniziale = arrayElementiImg.length-1
+    }else{
+        indiceIniziale--;
+    }
 
     arrayElementiImg[indiceIniziale].classList.add("visible")
 
