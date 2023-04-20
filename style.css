@@ -26,7 +26,8 @@ img{
     max-width: 1200px;
     background-color: #cecece;
     width: 100%;
-    height: 60vh;
+    height: 65vh;
+    position: relative;
 }
 
 .carosello > img {
@@ -35,6 +36,28 @@ img{
 
 .carosello > img.visible{
     display: block;
+}
+
+.btn{
+    aspect-ratio: 1.5;
+    border-radius: 50%;
+    background-color: rgba(255, 248, 248, 0.548);
+    padding: 1rem;
+    border: none;
+}
+
+#avantiJs{
+    position: absolute;
+    top: 2%;
+    right: 50%;
+    transform: translate(-50% , 0);
+}
+
+#indietroJs{
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    transform: translate(-50% , 0);
 }
 
 
