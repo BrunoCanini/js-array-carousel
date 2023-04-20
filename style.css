@@ -1,0 +1,41 @@
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+/* GENERAL */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.carosello{
+    max-width: 1200px;
+    background-color: #cecece;
+    width: 100%;
+    height: 60vh;
+}
+
+.carosello > img {
+    display: none;
+}
+
+.carosello > img.visible{
+    display: block;
+}
+
+
+
